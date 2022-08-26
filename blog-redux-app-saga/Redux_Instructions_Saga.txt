@@ -102,7 +102,14 @@ Step 5:
 
   import { CREATE_REQUEST, FETCH_REQUEST, FETCH_REQUEST_BY_ID, FETCH_SUCCESS, UPDATE_REQUEST_BY_ID } from "./types";
 
-  const postReducer = (state = {}, action) => {
+  const initialPostState = {
+    errors: undefined,
+    isLoading: true,
+    postList: [],
+    post: {},
+    status: undefined
+  }
+  const postReducer = (state = initialPostState, action) => {
 
     switch(action.type){
       case CREATE_REQUEST:
@@ -287,7 +294,7 @@ Step 12:
 ---
   Let's work on Redux-Saga 
 
-  npm i redux-saga 
+  npm i redux-saga redux-devtools-extension
 
   and also in store/posts/sagas.js 
   have the following 
@@ -350,6 +357,8 @@ Step 13:
 
 Step 14: 
 --
+  in store/posts/actions.js 
+  
   Setup actions for the fetch request 
   import { FETCH_REQUEST } from "./types"
 
