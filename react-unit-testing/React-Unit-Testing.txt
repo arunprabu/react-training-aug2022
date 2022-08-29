@@ -1,0 +1,41 @@
+Calc
+--
+  Requirements
+    Design 
+      Development 
+        Testing 
+          Deployment 
+            Maintanance 
+
+
+Dev => QA => (bugs) => Dev => QA => (bugs) => Dev => QA => (bugs) => Dev => QA => (QA PASSED) => Deployment 
+
+add feature 
+--- 
+  Dev 
+  --
+    Resource: FRD, HLD, LLD 
+    Resource: Test cases / Requirements  
+      1. add should take numbers as inputs 
+      2. add should return only number as output 
+      3. if wrong inputs entered add button should be disabled
+
+    function add(a, b) {
+      if(typeof a === 'number' && typeof a === 'number'){
+        return a  +b;
+      }  
+    }
+
+    add(10, 20); // 30 
+
+---
+
+Automated Testing 
+---
+  0. Static Type Checking 
+      (Typescript, FlowJS, PropTypes)
+  1. Unit Testing 
+      
+  2. Integration Testing 
+
+  3. End to End Testing / E2E Testing 
