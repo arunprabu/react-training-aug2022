@@ -65,7 +65,7 @@ function* watchCreatePost(){
 function* postsSaga(){
   yield all([
     fork(watchFetchRequest),
-    fork(watchCreatePost),
+    fork(watchCreatePost), 
   ])
 }
 
