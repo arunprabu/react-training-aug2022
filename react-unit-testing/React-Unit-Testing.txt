@@ -14,7 +14,7 @@ add feature
 --- 
   Dev 
   --
-    Resource: FRD, HLD, LLD 
+    Resources: FRD, HLD, LLD 
     Resource: Test cases / Requirements  
       1. add should take numbers as inputs 
       2. add should return only number as output 
@@ -35,7 +35,48 @@ Automated Testing
   0. Static Type Checking 
       (Typescript, FlowJS, PropTypes)
   1. Unit Testing 
+      * testing tiny independent code unit 
+      * Individuals units/components are tested
+      * Bug Reduction Density: 40-80%
+
+      Tools: (JEST + Enzyme) or (JEST + React Testing Library)
+      
+      Jest - Test Framework and also Test Runner 
+      Enzyme - jQuery like querying tool 
+      React Testing Library - modern alternative to Enzyme 
       
   2. Integration Testing 
+      * diff units, modules, or components are tested as combined entity
+
+      Tools: (JEST + Enzyme) or (JEST + React Testing Library)
 
   3. End to End Testing / E2E Testing 
+      * Testing the whole app 
+      Tools: Selenium, CypressJS, ProtractorJS 
+
+---
+
+// How to write test spec?
+// Where to write test spec?
+// How to test our app against the test specs we identified?
+
+
+Software Dev Methodologies / Testing Approaches
+--
+  1. TDD (Test-Driven Development)
+      * is a practice, that instructs the developer to write NEW CODE only if automated test failed
+
+      dev writes test spec => (instance feedback of failure) => dev writes the functionality => (instance feedback of success) => [CODE COMPLETE]
+
+      Tools: JEST 
+      Testing Pattern: AAA (Arrange, Act, Assert)
+
+  2. BDD (Behaviour-driven Development)
+      * test cases should be written around the Behaviour the end user wants to experience app 
+    
+      dev writes test spec => (instance feedback of failure) => dev writes the functionality => (instance feedback of success) => [CODE COMPLETE]
+
+      Tools: JasmineJS 
+      Testing Pattern: Given/When/Then 
+
+-------
