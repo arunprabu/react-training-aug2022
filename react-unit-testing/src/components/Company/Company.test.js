@@ -51,9 +51,9 @@ describe('Company Component', () => {
     fireEvent.change(countryInput, { target: { value: 'Canada'}});
     expect(countryInput.value).toBe('Canada');
     expect(screen.getByTestId('websiteCountryTxt')).toHaveTextContent('Head over to Cognizant Canada Website');
-
   });
 
+  
 
 
 });

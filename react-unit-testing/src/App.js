@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About/About';
 import Company from './components/Company/Company';
+import Users from './components/Users/Users';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
 
       <hr />
       <Company name='Cognizant Tech'/>
+
+      <hr/>
+      <Users />
       
     </div>
   );
